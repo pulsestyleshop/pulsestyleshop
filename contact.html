@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — MortgagePro</title>
+  <meta name="description" content="Get in touch with the MortgagePro team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">M</span><span>Mortgage<span class="logo-accent">Pro</span></span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Calculator</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#calculator" class="btn btn-primary btn-sm">Calculate Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Have a question, suggestion, or feedback? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="ico">✉️</div>
+          <div><h4>Email</h4><p>hello@mortgagepro.example</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ico">💬</div>
+          <div><h4>Support</h4><p>support@mortgagepro.example</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ico">🕒</div>
+          <div><h4>Response Time</h4><p>We typically reply within 1–2 business days.</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ico">📍</div>
+          <div><h4>Location</h4><p>Remote-first team</p></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your Name</label>
+            <div class="input-wrap"><input type="text" id="name" required placeholder="Jane Doe" /></div>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <div class="input-wrap"><input type="email" id="email" required placeholder="jane@example.com" /></div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div class="form-msg" id="formMsg">Thanks! Your message has been received. (Demo only — connect to a backend to enable sending.)</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-mark">M</span><span>Mortgage<span class="logo-accent">Pro</span></span></a><p>Free, accurate mortgage tools to help you make confident home-buying decisions.</p></div>
+      <div class="footer-col"><h4>Product</h4><a href="index.html">Calculator</a><a href="how-it-works.html">How It Works</a><a href="faq.html">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> MortgagePro. All rights reserved.</p>
+      <p class="disclaimer">Estimates only. Not financial advice.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // Simple contact form demo handler
+    const form = document.getElementById('contactForm');
+    const msg = document.getElementById('formMsg');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        msg.classList.add('ok');
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>
