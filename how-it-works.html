@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works — MortgagePro</title>
+  <meta name="description" content="Learn how our mortgage calculator works, the formula behind it, and what each input means." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">M</span><span>Mortgage<span class="logo-accent">Pro</span></span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Calculator</a>
+        <a href="how-it-works.html" class="active">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#calculator" class="btn btn-primary btn-sm">Calculate Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>How It Works</h1>
+      <p>Understand exactly how your monthly payment is calculated — no hidden magic, just transparent math.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Enter Your Details</h3>
+        <p>Add the home price, down payment, loan term, and interest rate. Optionally include taxes, insurance, and HOA.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>We Do the Math</h3>
+        <p>Your loan amount is calculated and the standard amortization formula produces your monthly principal and interest.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>See the Breakdown</h3>
+        <p>View your monthly total, a visual breakdown, and a year-by-year amortization schedule.</p>
+      </div>
+    </div>
+  </div>
+
+  <article class="prose">
+    <h2>The Mortgage Formula</h2>
+    <p>Monthly principal &amp; interest is calculated using the standard amortization formula:</p>
+    <div class="formula-box">M = P × [ r(1 + r)ⁿ ] ÷ [ (1 + r)ⁿ − 1 ]</div>
+    <ul>
+      <li><strong>M</strong> = monthly payment (principal &amp; interest)</li>
+      <li><strong>P</strong> = loan principal (home price − down payment)</li>
+      <li><strong>r</strong> = monthly interest rate (annual rate ÷ 12 ÷ 100)</li>
+      <li><strong>n</strong> = total number of payments (years × 12)</li>
+    </ul>
+
+    <h2>What Each Input Means</h2>
+    <h3>Home Price</h3>
+    <p>The total purchase price of the property.</p>
+    <h3>Down Payment</h3>
+    <p>The amount you pay upfront. A larger down payment reduces your loan amount and monthly payment.</p>
+    <h3>Loan Term</h3>
+    <p>The number of years over which you repay the loan. Longer terms mean lower monthly payments but more total interest.</p>
+    <h3>Interest Rate</h3>
+    <p>The annual interest rate on your loan, as quoted by your lender.</p>
+    <h3>Property Tax, Insurance &amp; HOA</h3>
+    <p>These recurring costs are added to your monthly payment, often collected in an escrow account.</p>
+
+    <h2>Important Note</h2>
+    <p>This calculator provides estimates for planning purposes only. Your actual payment may differ based on lender fees, PMI, closing costs, and other factors. Always consult a licensed mortgage professional.</p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">M</span><span>Mortgage<span class="logo-accent">Pro</span></span></a>
+        <p>Free, accurate mortgage tools to help you make confident home-buying decisions.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><a href="index.html">Calculator</a><a href="how-it-works.html">How It Works</a><a href="faq.html">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> MortgagePro. All rights reserved.</p>
+      <p class="disclaimer">Estimates only. Not financial advice.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
