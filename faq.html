@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — MortgagePro</title>
+  <meta name="description" content="Frequently asked questions about mortgages and our calculator." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">M</span><span>Mortgage<span class="logo-accent">Pro</span></span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Calculator</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#calculator" class="btn btn-primary btn-sm">Calculate Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+      <p>Answers to the most common questions about mortgages and using our calculator.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>How accurate is this mortgage calculator?</summary>
+        <div class="faq-answer">Our calculator uses the standard amortization formula used by lenders. Results are accurate estimates for principal and interest, plus any taxes, insurance, and HOA you enter. Your actual payment may differ due to lender fees, PMI, and closing costs.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What is a down payment?</summary>
+        <div class="faq-answer">A down payment is the portion of the home price you pay upfront. The rest is financed through a mortgage. A larger down payment reduces your loan amount and monthly payment, and may help you avoid PMI.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What is PMI and does this calculator include it?</summary>
+        <div class="faq-answer">PMI (Private Mortgage Insurance) is typically required when your down payment is less than 20%. Our basic calculator does not include PMI automatically — you can add it manually via the Advanced section if needed.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Should I choose a 15-year or 30-year loan?</summary>
+        <div class="faq-answer">A 15-year loan has higher monthly payments but much less total interest. A 30-year loan offers lower monthly payments but more interest over time. Choose based on your budget and long-term plans.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Does the calculator include property taxes and insurance?</summary>
+        <div class="faq-answer">Yes — expand the "Advanced" section to enter annual property tax, annual home insurance, and monthly HOA fees. These will be included in your monthly estimate and chart.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is my data stored or shared?</summary>
+        <div class="faq-answer">No. All calculations happen in your browser. We do not store, transmit, or share any of the numbers you enter. See our Privacy Policy for details.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I see the amortization schedule?</summary>
+        <div class="faq-answer">Yes. On the calculator page, click "Show Amortization Schedule" to view a year-by-year breakdown of principal, interest, and remaining balance.</div>
+      </details>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-mark">M</span><span>Mortgage<span class="logo-accent">Pro</span></span></a><p>Free, accurate mortgage tools to help you make confident home-buying decisions.</p></div>
+      <div class="footer-col"><h4>Product</h4><a href="index.html">Calculator</a><a href="how-it-works.html">How It Works</a><a href="faq.html">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> MortgagePro. All rights reserved.</p>
+      <p class="disclaimer">Estimates only. Not financial advice.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
