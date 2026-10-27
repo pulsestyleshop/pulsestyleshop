@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — MortgagePro</title>
+  <meta name="description" content="Learn about MortgagePro's mission to make mortgage planning simple and transparent." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">M</span><span>Mortgage<span class="logo-accent">Pro</span></span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Calculator</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#calculator" class="btn btn-primary btn-sm">Calculate Now</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>About MortgagePro</h1>
+      <p>We believe everyone deserves clear, honest tools to plan their biggest financial decision.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><div class="num">100%</div><div class="lbl">Free to use</div></div>
+      <div class="stat"><div class="num">0</div><div class="lbl">Sign-ups required</div></div>
+      <div class="stat"><div class="num">3s</div><div class="lbl">Instant estimates</div></div>
+      <div class="stat"><div class="num">24/7</div><div class="lbl">Always available</div></div>
+    </div>
+  </div>
+
+  <article class="prose">
+    <h2>Our Mission</h2>
+    <p>Buying a home is one of the most important financial decisions most people will ever make — yet the process is often confusing and opaque. MortgagePro exists to change that. We build simple, transparent tools that help you understand exactly what you're getting into before you sign on the dotted line.</p>
+
+    <h2>What We Offer</h2>
+    <ul>
+      <li>A fast, accurate mortgage calculator with full payment breakdowns</li>
+      <li>Clear explanations of the formulas and concepts behind the numbers</li>
+      <li>A visual amortization schedule so you can see your loan over time</li>
+      <li>Straightforward guides and FAQs — no jargon, no upsells</li>
+    </ul>
+
+    <h2>Our Principles</h2>
+    <h3>Transparency</h3>
+    <p>We show our work. Every formula, every assumption, every input is visible to you.</p>
+    <h3>Privacy</h3>
+    <p>All calculations run in your browser. We don't collect or store your financial data.</p>
+    <h3>Simplicity</h3>
+    <p>Powerful tools don't have to be complicated. We design for clarity first.</p>
+
+    <h2>Important Disclaimer</h2>
+    <p>MortgagePro is an educational tool. The estimates it provides are for planning purposes only and do not constitute financial, legal, or lending advice. Always consult a licensed mortgage professional before making decisions.</p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo"><span class="logo-mark">M</span><span>Mortgage<span class="logo-accent">Pro</span></span></a><p>Free, accurate mortgage tools to help you make confident home-buying decisions.</p></div>
+      <div class="footer-col"><h4>Product</h4><a href="index.html">Calculator</a><a href="how-it-works.html">How It Works</a><a href="faq.html">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> MortgagePro. All rights reserved.</p>
+      <p class="disclaimer">Estimates only. Not financial advice.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
